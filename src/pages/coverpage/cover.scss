@@ -1,0 +1,111 @@
+.CoverPage__content {
+	position: relative;
+	width: 100%;
+	max-width: 100%; // Adjust as needed
+	overflow: hidden;
+	height: fit-content;
+}
+
+.img {
+	position: relative;
+	height: 700px; // Set height for your slideshow
+}
+
+.slideshow-image {
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out; // Fading effect
+}
+
+.slideshow-image.active {
+	opacity: 1; // Show active slide
+}
+
+.absolute {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 20%; // Adjust for positioning
+	left: 10%;
+	gap: 1rem;
+	height: min-content;
+	color: white; // Adjust as needed
+	z-index: 1; // Ensure content is above images
+}
+
+h1 {
+	font-size: 2.5rem; // Adjust font size
+}
+
+p {
+	font-size: 1.2rem; // Adjust font size
+}
+
+.QuickHelp {
+	padding: 10px 20px;
+	background-color: #007bff; // Button color
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.QuickHelp:hover {
+	background-color: #0056b3; // Darker on hover
+}
+
+@media (max-width: 900px) {
+	.CoverPage__content {
+		video {
+			height: 50vh;
+		}
+		.absolute {
+			h1 {
+				font-size: 2.2rem;
+			}
+			p {
+				font-size: 1.1rem;
+			}
+			img {
+				width: 3.5rem;
+			}
+			button {
+				font-size: 0.95rem;
+				padding: 0.8rem 2rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.CoverPage__content {
+		gap: 0.5rem;
+		video {
+			height: 35vh;
+			margin-top: 0;
+		}
+		.absolute {
+			top: 35%;
+			h1 {
+				font-size: 1.3rem;
+			}
+			p {
+				font-size: 0.9rem;
+				margin-bottom: 1rem;
+			}
+			img {
+				width: 2.2rem;
+			}
+			button {
+				font-size: 0.85rem;
+				padding: 0.6rem 1.2rem;
+				margin-top: 1rem;
+			}
+		}
+	}
+}
