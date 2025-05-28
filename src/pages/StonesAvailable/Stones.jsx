@@ -1,7 +1,6 @@
 import React from "react";
 import "./stop.scss";
 import { useEffect, useState } from "react";
-// import { products } from "../../components/Products/Data";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 
