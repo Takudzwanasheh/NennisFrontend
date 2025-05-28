@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import About from "./components/about/About";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Contact from "./components/ContactDetails/Contact";

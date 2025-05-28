@@ -10,7 +10,6 @@ import Slide6 from "../../assets/Slide (6).jpg";
 import Slide7 from "../../assets/Slide (7).jpg";
 import Slide8 from "../../assets/Slide (8).jpg";
 import Slide9 from "../../assets/Slide (9).jpg";
-import Slide10 from "../../assets/Slide (10).jpg";
 import { NavLink } from "react-router-dom";
 
 export default function IntroSection() {
@@ -24,7 +23,6 @@ export default function IntroSection() {
 		Slide7,
 		Slide8,
 		Slide9,
-		Slide10,
 	];
 
 	const [current, setCurrent] = useState(0);

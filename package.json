@@ -21,15 +21,10 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"lint": "eslint .",
-		"prebuild": "npm run lint -- --fix",
+		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
-	},
-	"engines": {
-		"node": ">=18.0.0",
-		"npm": ">=9.0.0"
 	},
 	"eslintConfig": {
 		"extends": [
