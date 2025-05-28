@@ -21,13 +21,15 @@ export default function Navbar() {
 			</div>
 
 			<div className={`right-section${showRightSection ? " show" : ""}`}>
-				<NavLink to={"/upload"} className='cart'>
-					<button>Add New Stones</button>
+				<NavLink to={"/about"} className='cart'>
+					<button>About us</button>
 				</NavLink>
 				<NavLink to={"/"} className='cart'>
 					Home
 				</NavLink>
-				<button className='login'>Icon</button>
+				<NavLink to={"/get_in_touch"} className='cart'>
+					Contact
+				</NavLink>
 			</div>
 		</div>
 	);
