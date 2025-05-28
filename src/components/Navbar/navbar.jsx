@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./navbar.scss";
 import { NavLink } from "react-router-dom";
 import vennis from "../../assets/Vennis.png";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState, useEffect } from "react";
 
 export default function Navbar() {
 	const [showRightSection, setShowRightSection] = useState(false);
@@ -13,7 +12,7 @@ export default function Navbar() {
 	};
 
 	// Close right section when clicking outside
-	React.useEffect(() => {
+	useEffect(() => {
 		if (!showRightSection) return;
 
 		const handleClickOutside = (event) => {

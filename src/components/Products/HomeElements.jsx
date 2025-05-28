@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./products.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import { products } from "./Data";
 import axios from "axios";
 

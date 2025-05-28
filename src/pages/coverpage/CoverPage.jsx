@@ -11,7 +11,7 @@ import "./cover.scss";
 export default function CoverPage() {
 	const videos = [Background, Background2];
 
-	const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+	// const randomVideo = videos[Math.floor(Math.random() * videos.length)];
 
 	return (
 		<div className='CoverPage'>
