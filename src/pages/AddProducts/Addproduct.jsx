@@ -50,6 +50,8 @@ export default function Addproduct() {
 							placeholder='Enter Image URL'
 							type='text'
 							name='imageUrl'
+							pattern='https?://.*'
+							title='Please enter a valid URL starting with http or https'
 							required
 						/>
 					</div>
