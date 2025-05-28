@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 import { NavLink } from "react-router-dom";
 import vennis from "../../assets/Vennis.png";
@@ -10,23 +10,6 @@ export default function Navbar() {
 	const handleMenuClick = () => {
 		setShowRightSection((prev) => !prev);
 	};
-
-	// Close right section when clicking outside
-	useEffect(() => {
-		if (!showRightSection) return;
-
-		const handleClickOutside = (event) => {
-			const navbar = document.querySelector(".navbar");
-			if (navbar && !navbar.contains(event.target)) {
-				setShowRightSection(false);
-			}
-		};
-
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
-	}, [showRightSection]);
 
 	return (
 		<div className={`navbar${showRightSection ? " scrolled" : ""}`}>
