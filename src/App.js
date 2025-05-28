@@ -10,6 +10,7 @@ import ProductDetails from "./pages/StonesAvailable/ProductDetails";
 import UserInfo from "./components/ContactDetails/UserInfo";
 import Addproduct from "./pages/AddProducts/Addproduct";
 import Respond from "./pages/Requests.jsx/Respond";
+import UpdateProduct from "./pages/AddProducts/Update";
 
 function App() {
 	const Layout = () => {
@@ -40,6 +41,10 @@ function App() {
 		{
 			path: "/about",
 			element: <About />,
+		},
+		{
+			path: "/update",
+			element: <UpdateProduct />,
 		},
 		{
 			path: `/stoneDetails/:id`,
