@@ -24,13 +24,13 @@ export default function Stones() {
 						<img src={product.imageUrl} alt={product.name} />
 						<h2>{product.StoneName}</h2>
 						<p className='p'>
-							{product.description && product.description.length > 50
-								? product.description.slice(0, 40) + "..."
+							{product.description && product.description.length > 100
+								? product.description.slice(0, 100) + "..."
 								: product.description}
 						</p>
-						<p style={{ fontWeight: "bold" }}>
+						{/* <p style={{ fontWeight: "bold" }}>
 							Price ${product.price} per carat{" "}
-						</p>
+						</p> */}
 						<NavLink to={`/stoneDetails/${product.id}`} className='right'>
 							<button className='btn'>More details</button>
 						</NavLink>

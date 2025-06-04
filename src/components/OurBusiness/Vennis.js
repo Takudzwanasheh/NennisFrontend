@@ -9,7 +9,7 @@ export const services = [
 	{
 		title: "Marketing Channels",
 		description:
-			"Vennis-Resources markets directly in some regional and international markets e.g., Diamonds to Belgium, India, Dubai, RSA.",
+			"Vennis-Resources markets directly in some regional and international markets and through agents in others.",
 		image:
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBuzUVQIe3UsMB1VGzlPmD0S99FWUkOfQ15hISZyrpIy7BGcQ1",
 	},

@@ -49,8 +49,8 @@ export default function IntroSection() {
 			<div className='absolute'>
 				<h1>THE EXCLUSIVE AGENT</h1>
 				<p>
-					For marketing and selling of all minerals produced in Zimbabwe except
-					gold and silver
+					For marketing and sale of all Gemstones and coloured stones except
+					diamonds
 				</p>
 				<NavLink to={"/get_in_touch"}>
 					<button className='QuickHelp'>Make A Deal</button>

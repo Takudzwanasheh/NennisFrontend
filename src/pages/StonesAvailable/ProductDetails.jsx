@@ -32,7 +32,7 @@ export default function ProductDetails() {
 				<h2>{product.StoneName}</h2>
 				<p className='description'>{product.description}</p>
 				<p>Found in {product.Location}</p>
-				<p style={{ fontWeight: "bold" }}>${product.price} per carat</p>
+				{/* <p style={{ fontWeight: "bold" }}>${product.price} per carat</p> */}
 
 				<NavLink to={"/get_in_touch"}>
 					<button className='Intirested'> Inquire </button>
